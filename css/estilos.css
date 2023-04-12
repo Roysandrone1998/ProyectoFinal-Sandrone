@@ -2,7 +2,7 @@
 @media screen and (min-width:900px){
 
 }
-/* Logo */
+                                       /* header */
 header{
     display: flex;
     flex-direction: column;
@@ -17,32 +17,37 @@ header{
     display: grid;
     place-items: center;
 }
-/* header img{
-    
-    /* background-image: url(/img/); no pude descargar la foto todavia 
+.logo{
+    width:20rem;
+    height:10rem;
+}
+.logo:hover{
+    transform: scale(120%);
+}
 
-    /* menu */
-/* nav*/
-    .container{
+                                         /* menu */
+                                        /* nav*/
+    .containerNav{
         display: flex;
         align-items: center;
         justify-content:space-around;
         width: 80%;
         text-align: center;
         padding: 1em;
-        background-color: black;
         background-position: top;
         border-radius: 5%;
+        list-style-type: none;
 }
 
 
 .linkm{
-    text-decoration: none;
-    list-style-type: none;
+    
+    text-decoration:none;
+    
     color: white;
     font-size: 1rem;
 }
-/* index */
+                                                       /* index */
 .abc{
     font-size: 42px;
 font-weight: bold;
@@ -51,9 +56,6 @@ font-family: monospace;
 rotate: 30;
 
 }
-/* .abc:hover{
-    height: 400px;
-} */
 .impresiones{
     font-size: 32px;
     font-weight: bold;
@@ -62,13 +64,11 @@ rotate: 30;
     margin:  auto;
     background-color: rgb(221, 75, 75);
 }
-/* Productos */
+                                  /* Productos */
 .cajasproductos{
     display: flex;
 }
-/*.cajasproductos div{
-
-}*/
+                                    /*.cajasproductos div*/
 #productos{
     color:rgb(19, 141, 50);
     text-align: center;
@@ -83,10 +83,8 @@ rotate: 30;
 }
 
 
-/* Pagina Carrito */
-.main{
-    margin: 150px 0 50px;
-}
+                                               /* Pagina Carrito */
+
 .carrito{
     display: grid;
     /* grid-template-columns: 1fr;
@@ -150,16 +148,8 @@ aside .card{
 }
 /* Pagina quienes somos */
 
-    /*Menu*/
-    .prueba { 
-        display: flex;
-        
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        background-color: black;
-        height: 100px;
-    }
+                                            /*Menu*/
+    
     /*Listas menu*/
     .submenu{
         width: 25%;
@@ -177,25 +167,23 @@ aside .card{
         display: flex;
         
     }
-    /*Enlaces menu y submenu*/
-
-    .prueba li a{
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-        
-    }
-    /*Hover a lista de submenu para mostrar submenu*/
-    .prueba li:hover ul {
-        display:flex;
-    }
-    /* cueris*/
+    
+                                        /* cueris*/
     @media screen and (max-width:800px){
-        .container{
+        .containerNav{
             flex-direction: column;
         }
-    }
+        .logo{
+            width:5rem;
+            height:5rem;
+        }
+        }
     
+    
+    .containerIndex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
