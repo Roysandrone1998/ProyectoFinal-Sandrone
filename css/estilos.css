@@ -1,0 +1,201 @@
+/* Fuente*/
+@media screen and (min-width:900px){
+
+}
+/* Logo */
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgb(250, 2, 2) 100%);
+    justify-content: space-between;
+}
+
+.container-logo{
+    display: grid;
+    place-items: center;
+}
+/* header img{
+    
+    /* background-image: url(/img/); no pude descargar la foto todavia 
+
+    /* menu */
+/* nav*/
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        width: 80%;
+        text-align: center;
+        padding: 1em;
+        background-color: black;
+        background-position: top;
+        border-radius: 5%;
+}
+
+
+.linkm{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 1rem;
+}
+/* index */
+.abc{
+    font-size: 42px;
+font-weight: bold;
+text-align: center;
+font-family: monospace;
+rotate: 30;
+
+}
+/* .abc:hover{
+    height: 400px;
+} */
+.impresiones{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding: auto   ;
+    margin:  auto;
+    background-color: rgb(221, 75, 75);
+}
+/* Productos */
+.cajasproductos{
+    display: flex;
+}
+/*.cajasproductos div{
+
+}*/
+#productos{
+    color:rgb(19, 141, 50);
+    text-align: center;
+    text-transform: initial;
+}
+
+.card {
+    width: 300px;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+
+/* Pagina Carrito */
+.main{
+    margin: 150px 0 50px;
+}
+.carrito{
+    display: grid;
+    /* grid-template-columns: 1fr;
+    grid-template-areas: 
+    'titulo'
+    'carrito'
+    'precio';
+    grid-template-rows: 50px auto 1fr;
+    padding: 0;
+    justify-items: center; */
+    padding: 0 100px;
+}
+.contenedorProductos{
+    padding: 20px 50px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+        align-items: center;
+        height: 550px;
+}
+.contenedorProducto__img{
+    width: 200px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+.contenedorDatos{
+    color: rgb(206, 4, 4);
+    list-style: none; 
+}
+.contenedorBotones{
+    background-color: rgb(255, 0, 149);
+    color: rgb(255, 255, 255);
+    padding: 5px 15px;
+    border: 1px solid rgb(56, 103, 173);
+    border-radius: 5px;
+}
+.contenedorPrecios{
+    color: darkgreen;
+}
+.cr{
+    text-align: center;
+    padding: 1% 3%;
+    position: sticky;
+    top: 0%;
+}
+aside{
+    grid-area: precio;
+    width: 90%;
+    margin: 10px 0;
+}
+aside .card{
+    padding: 20px;
+}
+.pagar{
+    background-color: rgb(0, 4, 255);
+    border: 1px solid  rgb(0, 4, 255);
+}
+/* Pagina quienes somos */
+
+    /*Menu*/
+    .prueba { 
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        background-color: black;
+        height: 100px;
+    }
+    /*Listas menu*/
+    .submenu{
+        width: 25%;
+        position:relative;
+        font-size: 14px;
+
+    }
+    /*Submenu*/
+    .anidado{
+        position: absolute;
+        display: none;
+    }
+    /*Lista submenu*/
+    .anidado li {
+        display: flex;
+        
+    }
+    /*Enlaces menu y submenu*/
+
+    .prueba li a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        
+    }
+    /*Hover a lista de submenu para mostrar submenu*/
+    .prueba li:hover ul {
+        display:flex;
+    }
+    /* cueris*/
+    @media screen and (max-width:800px){
+        .container{
+            flex-direction: column;
+        }
+    }
+    
+    
