@@ -153,10 +153,7 @@ aside .card{
 justify-content: center;
 text-align: center;
 }
-.logoInstagram{
-    justify-content: center;
-    align-items: center;
-}
+
 
                                             /*Menu*/
     
@@ -196,4 +193,8 @@ text-align: center;
         justify-content: center;
         align-items: center;
     }
-    
+                                            /*footer*/
+.logoInstagram{
+    justify-content: center;
+    align-items: center;
+}
