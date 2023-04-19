@@ -12,10 +12,9 @@ body {
 
 
 
-/* Fuente*/
-@media screen and (min-width:900px){
 
-}
+/* Fuente*/
+
                                        /* header */
 header{
     display: flex;
@@ -37,7 +36,7 @@ header{
         height: 100px;
 }
 .logo:hover{
-    transform: scale(120%);
+    transform: scale(80%);
 }
 .navbar {
     display: flex;
@@ -182,9 +181,20 @@ aside .card{
     background-color: rgb(0, 4, 255);
     border: 1px solid  rgb(0, 4, 255);
 }
-                         /* Pagina quienes somos */
-.perfil{
-    list-style: none;
+                                  /* Pagina quienes somos */
+.perfil {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+.secQuienes{
+    background-color: #ddc53f;
+    padding: 15px;
+    margin-top: 50px;
 }
 .comoTrabajamos{
 justify-content: center;
@@ -195,50 +205,73 @@ text-align: center;
                                             /*Menu*/
     
     /*Listas menu*/
-    .submenu{
-        width: 25%;
-        position:relative;
-        font-size: 14px;
+.submenu{
+    width: 25%;
+    position:relative;
+    font-size: 14px;
 
-    }
+}
     /*Submenu*/
-    .anidado{
-        position: absolute;
-        display: none;
-    }
+.anidado{
+    position: absolute;
+    display: none;
+}
     /*Lista submenu*/
-    .anidado li {
-        display: flex;
-        
-    }
+.anidado li {
+    display: flex;
+    
+}
     
                                         /* cueris*/
     /* Estilos para dispositivos grandes */
-@media (min-width: 992px) {
+    
+@media (min-width: 992px) 
+{
+.container-logo {
+        width: 20%;
+}
+.containerNav{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 25px;
+    }
+.containerNav li{
+        margin-left: 25px;
+}
 .logo {
 width: 250px;
 height: 250px;
-}
+} 
 
 
-    .logInstagram {
+.logInstagram {
 width: 100px;
 height: 100px;
-    }
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .col-md-6 {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
 }
 
+.row {
+flex-direction: column;
+align-items: center;
+}
+    
+.col-md-6 {
+text-align: center;
+margin-bottom: 2rem;
+}
+}
   /* Estilos para dispositivos medianos */
-@media (max-width: 991px) {
-
+@media (min-width: 768px) and (max-width: 991px){
+.container-logo {
+width: 25%;
+}
+.containerNav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+.containerNav li {
+    margin-left: 15px;
+}
 .logo {
 width: 100px;
 height: 100px;
@@ -252,8 +285,20 @@ height: 30px;
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     /*tamaño del logo */
+.container-logo {
+    width: 50%
+}
+.containerNav {
+    display: none;
+    flex-direction: column;
+    margin-top: 0;
+
+}
+.containerNav li{
+    margin: 0;
+}
 .logo {
 width: 80px;
 height: 80px;
@@ -265,7 +310,7 @@ width: 20px;
 height: 20px;
 }
 
-    .title {
+.title {
     font-size: 24px;
     }
 }
