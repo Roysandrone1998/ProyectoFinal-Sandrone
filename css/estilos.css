@@ -1,3 +1,17 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+
 /* Fuente*/
 @media screen and (min-width:900px){
 
@@ -5,29 +19,42 @@
                                        /* header */
 header{
     display: flex;
-    flex-direction: column;
-    padding: 10px 100px;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgb(250, 2, 2) 100%);
-    justify-content: space-between;
+    
 }
 
 .container-logo{
     display: grid;
     place-items: center;
 }
-.logo{
-    width:20rem;
-    height:10rem;
+.logo {
+        width: 100px;
+        height: 100px;
 }
 .logo:hover{
     transform: scale(120%);
 }
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-size: 1.2rem;
+}
+
 
                                          /* menu */
                                         /* nav*/
-    .containerNav{
+.containerNav{
         display: flex;
         align-items: center;
         justify-content:space-around;
@@ -41,30 +68,40 @@ header{
 
 
 .linkm{
-    
+    box-sizing: border-box;
+    margin: 6px;
+    padding: inherit;
     text-decoration:none;
-    
     color: white;
     font-size: 1rem;
 }
                                                        /* index */
-.abc{
-    font-size: 42px;
-font-weight: bold;
-text-align: center;
-font-family: monospace;
-rotate: 30;
+.containerIndex {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 20px;
+padding: 20px;
+}
+.abc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-}
-.impresiones{
-    font-size: 32px;
-    font-weight: bold;
+.title {
+    font-size: 4rem;
     text-align: center;
-    padding: auto   ;
-    margin:  auto;
-    background-color: rgb(221, 75, 75);
+    margin-bottom: 20px;
 }
-                                  /* Productos */
+
+.impresiones {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px
+}
+
+/* Productos */
 .cajasproductos{
     display: flex;
 }
@@ -176,25 +213,78 @@ text-align: center;
     }
     
                                         /* cueris*/
-    @media screen and (max-width:800px){
-        .containerNav{
-            flex-direction: column;
-        }
-        .logo{
-            width:5rem;
-            height:5rem;
-        }
-        }
-    
-    
-    .containerIndex{
-        display: flex;
+    /* Estilos para dispositivos grandes */
+@media (min-width: 992px) {
+.logo {
+width: 250px;
+height: 250px;
+}
+
+
+    .logInstagram {
+width: 100px;
+height: 100px;
+    }
+    .row {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
+    
+    .col-md-6 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+  /* Estilos para dispositivos medianos */
+@media (max-width: 991px) {
+
+.logo {
+width: 100px;
+height: 100px;
+}
+
+
+.logInstagram {
+width: 30px;
+height: 30px;
+}
+}
+
+
+@media (max-width: 576px) {
+    /*tamaño del logo */
+.logo {
+width: 80px;
+height: 80px;
+}
+
+    
+.logInstagram {
+width: 20px;
+height: 20px;
+}
+
+    .title {
+    font-size: 24px;
+    }
+}
                                             /*footer*/
+.containerRedes{                                           
+background-color: #000000;
+height: 100px;
+margin-top: 50px;
+}
+.containerRedes div{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.containerRedes strong{
+    color: beige;
+}
 .logoInstagram{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
