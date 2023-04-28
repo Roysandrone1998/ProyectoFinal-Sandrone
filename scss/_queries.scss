@@ -1,0 +1,102 @@
+                                        /* queries*/
+    /* Estilos para dispositivos grandes */
+@media (min-width: 992px){
+.container-logo {
+    width: 20%;}
+.containerNav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+.containerNav li{
+    margin-left: 25px;
+}
+.logo {
+    width: 250px;
+    height: 250px;
+} 
+.logInstagram {
+    width: 100px;
+    height: 100px;
+}       
+.row {
+    flex-direction: column;
+    align-items: center;
+}    
+.col-md-6 {
+    text-align: center;
+    margin-bottom: 2rem;
+    }
+}
+
+                         /* Estilos para dispositivos moviles */
+@media only screen and (max-width: 768px){
+    .containerNav{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        padding:0;
+        border-radius: 5%;
+        
+}
+
+
+.linkm{
+    margin: 2px;
+
+}
+    .container-logo {
+        width: 10%;
+    }
+    
+
+.containerNav li{
+    margin: 0;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+}
+.logInstagram {
+    width: 20px;
+    height: 20px;
+}
+.title {
+    font-size: 24px;
+}
+                        /* quienes somos */
+.perfil {
+    font-size: 16px;
+}
+.perfil li {
+    padding: 10px;
+}
+ /* productos */
+.productos {
+    display: flex;
+    flex-direction: column;
+}
+article {
+    margin-bottom: 20px;
+}
+article h2 {
+    font-size: 0.75rem;
+}
+article img {
+    width: 100%;
+}
+article ul {
+    margin-top: 5px;
+}
+article ul li {
+    font-size: 0.4rem;
+}
+article ul a {
+    font-size: 0.4rem;
+}
+}
+/* Pedidos*/
+.formulario {
+    margin-top: 20px;
+}
+            

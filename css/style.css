@@ -1,27 +1,330 @@
+/* Estilos generales */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-* body {
+
+body {
   font-family: Arial, sans-serif;
 }
 
-.btnVermas, .contenedorBotones {
+/* Header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 40%, rgb(0, 8, 83) 100%);
+}
+
+.container-logo {
+  display: grid;
+  place-items: center;
+}
+.container-logo .logo {
+  width: 100px;
+  height: 100px;
+}
+.container-logo .logo:hover {
+  transform: scale(80%);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 20px;
+  font-size: 1.2rem;
+}
+
+.containerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  text-align: center;
+  padding: 1em;
+  background-position: top;
+  border-radius: 5%;
+  list-style-type: none;
+}
+.containerNav .linkm {
+  box-sizing: border-box;
+  margin: 6px;
+  padding: inherit;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+/* index */
+.containerIndex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+.containerIndex .abc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.containerIndex .title {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.containerIndex .impresiones {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Pagina Carrito */
+.contenedorDatos {
+  list-style: none;
+}
+.contenedorDatos .contenedorBotones {
+  background-color: rgb(0, 65, 161);
+  color: rgb(255, 255, 255);
+  padding: 5px 15px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+.contenedorDatos .contenedorPrecios {
+  color: rgb(43, 43, 43);
+}
+
+.carrito {
+  display: grid;
+  padding: auto;
+  margin: auto;
+}
+.carrito .cr {
+  text-align: center;
+  padding: 1% 3%;
+  position: sticky;
+  top: 0%;
+}
+
+.pagar {
+  background-color: rgb(0, 4, 255);
+  border: 1px solid rgb(0, 4, 255);
+}
+
+/* Pedidos */
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+.formulario .formulario label {
+  display: grid;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.formulario .formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.formulario .formulario button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.formulario .formulario button :hover {
+  background-color: #0069d9;
+}
+
+/* Productos */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+.productos .productos img {
+  max-width: 100%;
+  height: auto;
+}
+.productos .productos article {
+  background-color: #615757;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+.productos article {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.productos article ul {
+  list-style: none;
+  text-align: center;
+}
+.productos article img {
+  display: flex;
+  margin: 0 auto;
+}
+
+.btnVermas {
   background-color: rgb(204, 204, 204);
   color: rgb(255, 255, 255);
   padding: 5px 15px;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
 }
-.btnVermas .btnVermas a, .contenedorBotones .btnVermas a, .btnVermas .contenedorBotones a, .contenedorBotones .contenedorBotones a {
+.btnVermas .btnVermas a {
   text-decoration: none;
   color: #000000;
 }
 
-.contenedorBotones {
-  background-color: rgb(255, 0, 149);
-  color: rgb(255, 255, 255);
+/* Pagina quienes somos */
+.perfil {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+.perfil .secQuienes {
+  background-color: #ddc53f;
+  padding: 15px;
+  margin-top: 50px;
+}
+.perfil .comoTrabajamos {
+  justify-content: center;
+  text-align: center;
+}
+
+/*footer*/
+footer {
+  background-color: #000000;
+  height: 100px;
+  margin-top: 50px;
+}
+footer footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer footer strong {
+  color: beige;
+}
+footer .logoInstagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* queries*/
+/* Estilos para dispositivos grandes */
+@media (min-width: 992px) {
+  .container-logo {
+    width: 20%;
+  }
+  .containerNav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+  }
+  .containerNav li {
+    margin-left: 25px;
+  }
+  .logo {
+    width: 250px;
+    height: 250px;
+  }
+  .logInstagram {
+    width: 100px;
+    height: 100px;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-md-6 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+/* Estilos para dispositivos moviles */
+@media only screen and (max-width: 768px) {
+  .containerNav {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 0;
+    border-radius: 5%;
+  }
+  .linkm {
+    margin: 2px;
+  }
+  .container-logo {
+    width: 10%;
+  }
+  .containerNav li {
+    margin: 0;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  .logInstagram {
+    width: 20px;
+    height: 20px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  /* quienes somos */
+  .perfil {
+    font-size: 16px;
+  }
+  .perfil li {
+    padding: 10px;
+  }
+  /* productos */
+  .productos {
+    display: flex;
+    flex-direction: column;
+  }
+  article {
+    margin-bottom: 20px;
+  }
+  article h2 {
+    font-size: 0.75rem;
+  }
+  article img {
+    width: 100%;
+  }
+  article ul {
+    margin-top: 5px;
+  }
+  article ul li {
+    font-size: 0.4rem;
+  }
+  article ul a {
+    font-size: 0.4rem;
+  }
+}
+/* Pedidos*/
+.formulario {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

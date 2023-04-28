@@ -1,0 +1,40 @@
+                                     /* Productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    .productos img {
+        max-width: 100%;
+        height: auto;
+    }
+    .productos article {
+        background-color: #615757;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: #ffffff;
+    }                                    
+    article {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+    article ul{
+        list-style: none;
+        text-align: center;
+    }
+    article img {
+        display: flex;
+        margin: 0 auto;
+    }
+}
+.btnVermas{
+    background-color: rgb(204, 204, 204);
+    color: rgb(255, 255, 255);
+    padding: 5px 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    .btnVermas a{
+        text-decoration: none;
+        color: #000000;
+    }
+}

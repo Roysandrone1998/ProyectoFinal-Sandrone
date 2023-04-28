@@ -1,25 +1,9 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    body {
-        font-family: Arial, sans-serif;
-    }
-}
-.btnVermas{
-    background-color: rgb(204, 204, 204);
-    color: rgb(255, 255, 255);
-    padding: 5px 15px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 5px;
-    .btnVermas a{
-    text-decoration: none;
-    color: #000000;
-    }
-}
-.contenedorBotones{
-    @extend .btnVermas;
-    background-color: rgb(255, 0, 149);
-    color: rgb(255, 255, 255);
-
-}
+@import "generales";
+@import "header";
+@import "index";
+@import "carrito";
+@import "pedidos";
+@import "productos";
+@import "quienes-somos";
+@import "footer";
+@import "queries";

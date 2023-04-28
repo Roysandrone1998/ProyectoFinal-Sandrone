@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedidos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
@@ -32,43 +35,47 @@
                 
             </ul>
         </nav>    
-        <h1>Pedidos</h1>
-        <p>
-            Mandanos tu pedido, contactate y habla con nostros  para tener una experiencia en el diseño de tu producto mas personalizada y poder llegar a lo deseado y mas.
-        </p>
+                        
     </header>
 
     <main><!--contenido principal-->
         <section>
-            <h2>Formulario</h2>
-            <form action="">  <!--formulario-->
-                <div>
-                <label for="nombre"> Nombre:</label>
-                <input type="text" name="nombre" placeholder="ingrese su nombre">
-                </div>
-                <div>
-                <label for="apellido" name="apellido">Apellido:</label>
-                <input type="text" name="apellido" placeholder="ingrese su apellido">
-            </div>
-            <div>
-                <label for="Email" name="Email">Email:</label>
-                <input type="text" name="Email" value="@gmail.com">
-            </div>
-            <div>
-                <label for="telefono">Telefono:</label>
-                <input type="text" name="telefono" placeholder="telefono">
-            </div>
-            <div>
-                <h4>Dejanos tu pedido</h4>
-        <textarea name="dejanos tu pedido" cols="20" rows="10"></textarea>
-            </div>
-            <div>
-                <p>¿Estas dispuesto a que te hablemos?</p>
-                Acepto:<input type="radio" value="Acepto" >
-            </div>
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Formulario</h2>
+                        <form class="formulario">
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su número telefónico">
+                            </div>
+                            <div>
+                                <label for="pedido">Indíquenos su pedido:</label>
+                                <textarea id="pedido" name="pedido" cols="30" rows="5"></textarea>
+                            </div>
+                            <div>
+                                <p>¿Está dispuesto a que nos comuniquemos con usted?</p>
+                                <label for="si">Sí:</label>
+                                <input type="radio" id="si" name="comunicacion" value="si">
+                                <label for="no">No:</label>
+                                <input type="radio" id="no" name="comunicacion" value="no">
+                            </div>
+                            <div>
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </form>
         </section>
             
     </main>

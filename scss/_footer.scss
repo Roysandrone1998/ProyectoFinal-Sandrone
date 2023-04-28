@@ -1,0 +1,20 @@
+                                      /*footer*/
+footer{                                           
+    background-color: #000000;
+    height: 100px;
+    margin-top: 50px;
+    footer div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer strong{
+        color: beige;
+    }
+    .logoInstagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+                                    

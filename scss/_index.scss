@@ -1,0 +1,24 @@
+                                                       /* index */
+.containerIndex {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 20px;
+padding: 20px;
+    .abc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .title {
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .impresiones {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px
+    }
+}
