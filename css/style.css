@@ -129,19 +129,19 @@ header {
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
-.formulario .formulario label {
+.formulario label {
   display: grid;
   margin-bottom: 5px;
   font-weight: bold;
 }
-.formulario .formulario textarea {
+.formulario textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ced4da;
   border-radius: 4px;
   box-sizing: border-box;
 }
-.formulario .formulario button {
+.formulario button {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -149,7 +149,7 @@ header {
   border-radius: 4px;
   cursor: pointer;
 }
-.formulario .formulario button :hover {
+.formulario button :hover {
   background-color: #0069d9;
 }
 
@@ -160,17 +160,14 @@ header {
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
-.productos .productos img {
+.productos img {
   max-width: 100%;
   height: auto;
 }
-.productos .productos article {
+.productos article {
   background-color: #615757;
-  padding: 1rem;
   border-radius: 0.5rem;
   color: #ffffff;
-}
-.productos article {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   padding: 20px;
 }
@@ -190,7 +187,7 @@ header {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
 }
-.btnVermas .btnVermas a {
+.btnVermas a {
   text-decoration: none;
   color: #000000;
 }
@@ -205,12 +202,12 @@ header {
   color: #666;
   margin-top: 10px;
 }
-.perfil .secQuienes {
+.secQuienes {
   background-color: #ddc53f;
   padding: 15px;
   margin-top: 50px;
 }
-.perfil .comoTrabajamos {
+.comoTrabajamos {
   justify-content: center;
   text-align: center;
 }
@@ -221,12 +218,12 @@ footer {
   height: 100px;
   margin-top: 50px;
 }
-footer footer div {
+footer div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-footer footer strong {
+footer strong {
   color: beige;
 }
 footer .logoInstagram {
