@@ -91,24 +91,23 @@ header {
 .contenedorDatos {
   list-style: none;
 }
-.contenedorBotones {
+.contenedorDatos .contenedorCarrito {
+  background: rgb(246, 248, 113);
+}
+.contenedorDatos .contenedorBotones {
   background-color: rgb(0, 65, 161);
   color: rgb(255, 255, 255);
   padding: 5px 15px;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
 }
-.contenedorPrecios {
+.contenedorDatos .contenedorPrecios {
   color: rgb(43, 43, 43);
 }
-
 .carrito {
   display: grid;
   padding: auto;
   margin: auto;
-  list-style: none
-}
-.carrito ul{
   list-style: none;
 }
 .carrito .cr {
@@ -129,19 +128,19 @@ header {
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
-.formulario label {
+.formulario .formulario label {
   display: grid;
   margin-bottom: 5px;
   font-weight: bold;
 }
-.formulario textarea {
+.formulario .formulario textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ced4da;
   border-radius: 4px;
   box-sizing: border-box;
 }
-.formulario button {
+.formulario .formulario button {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -149,7 +148,7 @@ header {
   border-radius: 4px;
   cursor: pointer;
 }
-.formulario button :hover {
+.formulario .formulario button :hover {
   background-color: #0069d9;
 }
 
@@ -160,14 +159,16 @@ header {
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
-.productos img {
+.productos .productos img {
   max-width: 100%;
   height: auto;
 }
-.productos article {
-  background-color: #615757;
+.productos .productos article {
+  background-color: #bb0505;
+  padding: 1rem;
   border-radius: 0.5rem;
-  color: #ffffff;
+}
+.productos article {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   padding: 20px;
 }
@@ -187,7 +188,7 @@ header {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
 }
-.btnVermas a {
+.btnVermas .btnVermas a {
   text-decoration: none;
   color: #000000;
 }
@@ -202,12 +203,12 @@ header {
   color: #666;
   margin-top: 10px;
 }
-.secQuienes {
+.perfil .secQuienes {
   background-color: #ddc53f;
   padding: 15px;
   margin-top: 50px;
 }
-.comoTrabajamos {
+.perfil .comoTrabajamos {
   justify-content: center;
   text-align: center;
 }
@@ -218,12 +219,12 @@ footer {
   height: 100px;
   margin-top: 50px;
 }
-footer div {
+footer footer div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-footer strong {
+footer footer strong {
   color: beige;
 }
 footer .logoInstagram {
