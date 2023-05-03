@@ -159,12 +159,12 @@ header {
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
-.productos .productos img {
+.productos img {
   max-width: 100%;
   height: auto;
 }
-.productos .productos article {
-  background-color: #bb0505;
+.productos article {
+  background-color: #fdf68b;
   padding: 1rem;
   border-radius: 0.5rem;
 }
