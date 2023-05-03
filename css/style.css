@@ -24,11 +24,11 @@ header {
   display: grid;
   place-items: center;
 }
-.container-logo .logo {
+.logo {
   width: 100px;
   height: 100px;
 }
-.container-logo .logo:hover {
+.logo:hover {
   transform: scale(80%);
 }
 
@@ -36,7 +36,7 @@ header {
   display: flex;
   align-items: center;
 }
-.navbar .nav-link {
+.nav-link {
   text-decoration: none;
   color: #ffffff;
   margin: 0 20px;
@@ -54,7 +54,7 @@ header {
   border-radius: 5%;
   list-style-type: none;
 }
-.containerNav .linkm {
+.linkm {
   box-sizing: border-box;
   margin: 6px;
   padding: inherit;
@@ -70,18 +70,18 @@ header {
   grid-gap: 20px;
   padding: 20px;
 }
-.containerIndex .abc {
+.abc {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.containerIndex .title {
+.title {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 20px;
 }
-.containerIndex .impresiones {
+.impresiones {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 20px;
@@ -91,17 +91,17 @@ header {
 .contenedorDatos {
   list-style: none;
 }
-.contenedorDatos .contenedorCarrito {
+.contenedorCarrito {
   background: rgb(246, 248, 113);
 }
-.contenedorDatos .contenedorBotones {
+.contenedorBotones {
   background-color: rgb(0, 65, 161);
   color: rgb(255, 255, 255);
   padding: 5px 15px;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
 }
-.contenedorDatos .contenedorPrecios {
+.contenedorPrecios {
   color: rgb(43, 43, 43);
 }
 .carrito {
@@ -110,7 +110,7 @@ header {
   margin: auto;
   list-style: none;
 }
-.carrito .cr {
+.cr {
   text-align: center;
   padding: 1% 3%;
   position: sticky;
@@ -128,19 +128,19 @@ header {
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
-.formulario .formulario label {
+.formulario label {
   display: grid;
   margin-bottom: 5px;
   font-weight: bold;
 }
-.formulario .formulario textarea {
+.formulario textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ced4da;
   border-radius: 4px;
   box-sizing: border-box;
 }
-.formulario .formulario button {
+.formulario button {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -148,7 +148,7 @@ header {
   border-radius: 4px;
   cursor: pointer;
 }
-.formulario .formulario button :hover {
+.formulario button :hover {
   background-color: #0069d9;
 }
 
@@ -188,7 +188,7 @@ header {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
 }
-.btnVermas .btnVermas a {
+.btnVermas a {
   text-decoration: none;
   color: #000000;
 }
@@ -203,12 +203,12 @@ header {
   color: #666;
   margin-top: 10px;
 }
-.perfil .secQuienes {
+.secQuienes {
   background-color: #ddc53f;
   padding: 15px;
   margin-top: 50px;
 }
-.perfil .comoTrabajamos {
+.comoTrabajamos {
   justify-content: center;
   text-align: center;
 }
@@ -219,15 +219,15 @@ footer {
   height: 100px;
   margin-top: 50px;
 }
-footer footer div {
+footer div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-footer footer strong {
+footer strong {
   color: beige;
 }
-footer .logoInstagram {
+.logoInstagram {
   display: flex;
   justify-content: center;
   align-items: center;
