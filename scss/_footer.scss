@@ -1,6 +1,7 @@
                                         /*footer*/
 footer{                                           
-    background-color: #000000;
+    background-color: rgb(0, 8, 83);
+    color: rgb(255, 252, 55);
     height: 100px;
     margin-top: 50px;
     footer div{
@@ -13,7 +14,7 @@ footer{
     }
     .logoInstagram{
     display: flex;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
     }
 }

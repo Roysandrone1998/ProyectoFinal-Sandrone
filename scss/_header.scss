@@ -4,7 +4,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgb(0, 8, 83) 100%);
 }
@@ -24,7 +24,7 @@ header{
         align-items: center;
     .nav-link {
         text-decoration: none;
-        color: #ffffff;
+        color: rgb(255, 255, 255);
         margin: 0 20px;
         font-size: 1.2rem;
     }

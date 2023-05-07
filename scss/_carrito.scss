@@ -3,18 +3,19 @@
         list-style: none; 
         
     .contenedorCarrito{
-        background: rgb(246, 248, 113);
-
+        background-color: rgb(148, 148, 146);
+        justify-content: space-between;
+        align-items: center;
     }
     .contenedorBotones{
-        background-color: rgb(0, 65, 161);
+        background-color: rgb(0, 8, 83);
         color: rgb(255, 255, 255);
         padding: 5px 15px;
-        border: 1px solid rgb(0, 0, 0);
+        border-radius: 2px solid rgb(0, 0, 0);
         border-radius: 5px;
     }
     .contenedorPrecios{
-        color: rgb(43, 43, 43);
+        color: rgb(0, 0, 0);
     }
 }
 .carrito{
@@ -33,6 +34,7 @@
     }
 }
 .pagar{
-    background-color: rgb(0, 4, 255);
-    border: 1px solid  rgb(0, 4, 255);
+    background-color: rgb(0, 8, 83);
+    border: 1px solid  rgb(255, 255, 255);
+    color: aliceblue;
 }

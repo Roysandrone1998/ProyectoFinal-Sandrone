@@ -15,7 +15,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 40%, rgb(0, 8, 83) 100%);
 }
@@ -24,11 +24,11 @@ header {
   display: grid;
   place-items: center;
 }
-.logo {
+.container-logo .logo {
   width: 100px;
   height: 100px;
 }
-.logo:hover {
+.container-logo .logo:hover {
   transform: scale(80%);
 }
 
@@ -36,9 +36,9 @@ header {
   display: flex;
   align-items: center;
 }
-.nav-link {
+.navbar .nav-link {
   text-decoration: none;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   margin: 0 20px;
   font-size: 1.2rem;
 }
@@ -54,7 +54,7 @@ header {
   border-radius: 5%;
   list-style-type: none;
 }
-.linkm {
+.containerNav .linkm {
   box-sizing: border-box;
   margin: 6px;
   padding: inherit;
@@ -70,21 +70,25 @@ header {
   grid-gap: 20px;
   padding: 20px;
 }
-.abc {
+.containerIndex .abc {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.title {
+.containerIndex .title {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 20px;
 }
-.impresiones {
+.containerIndex .impresiones {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.mainIndex {
+  margin-top: 80px;
 }
 
 /* Pagina Carrito */
@@ -92,25 +96,28 @@ header {
   list-style: none;
 }
 .contenedorCarrito {
-  background: rgb(246, 248, 113);
+  background-color: rgb(148, 148, 146);
+  justify-content: space-between;
+  align-items: center;
 }
 .contenedorBotones {
-  background-color: rgb(0, 65, 161);
+  background-color: rgb(0, 8, 83);
   color: rgb(255, 255, 255);
   padding: 5px 15px;
-  border: 1px solid rgb(0, 0, 0);
+  border-radius: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
 }
 .contenedorPrecios {
-  color: rgb(43, 43, 43);
+  color: rgb(0, 0, 0);
 }
+
 .carrito {
   display: grid;
   padding: auto;
   margin: auto;
   list-style: none;
 }
-.cr {
+.carrito .cr {
   text-align: center;
   padding: 1% 3%;
   position: sticky;
@@ -118,8 +125,9 @@ header {
 }
 
 .pagar {
-  background-color: rgb(0, 4, 255);
-  border: 1px solid rgb(0, 4, 255);
+  background-color: rgb(0, 8, 83);
+  border: 1px solid rgb(255, 255, 255);
+  color: aliceblue;
 }
 
 /* Pedidos */
@@ -128,19 +136,19 @@ header {
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
-.formulario label {
+.formulario .formulario label {
   display: grid;
   margin-bottom: 5px;
   font-weight: bold;
 }
-.formulario textarea {
+.formulario .formulario textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ced4da;
   border-radius: 4px;
   box-sizing: border-box;
 }
-.formulario button {
+.formulario .formulario button {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -148,7 +156,7 @@ header {
   border-radius: 4px;
   cursor: pointer;
 }
-.formulario button :hover {
+.formulario .formulario button :hover {
   background-color: #0069d9;
 }
 
@@ -159,12 +167,12 @@ header {
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
-.productos img {
+.productos .productos img {
   max-width: 100%;
   height: auto;
 }
-.productos article {
-  background-color: #fdf68b;
+.productos .productos article {
+  background-color: #f5f255;
   padding: 1rem;
   border-radius: 0.5rem;
 }
@@ -188,7 +196,7 @@ header {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
 }
-.btnVermas a {
+.btnVermas .btnVermas a {
   text-decoration: none;
   color: #000000;
 }
@@ -203,33 +211,34 @@ header {
   color: #666;
   margin-top: 10px;
 }
-.secQuienes {
+.perfil .secQuienes {
   background-color: #ddc53f;
   padding: 15px;
   margin-top: 50px;
 }
-.comoTrabajamos {
+.perfil .comoTrabajamos {
   justify-content: center;
   text-align: center;
 }
 
 /*footer*/
 footer {
-  background-color: #000000;
+  background-color: rgb(0, 8, 83);
+  color: rgb(255, 252, 55);
   height: 100px;
   margin-top: 50px;
 }
-footer div {
+footer footer div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-footer strong {
+footer footer strong {
   color: beige;
 }
-.logoInstagram {
+footer .logoInstagram {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
