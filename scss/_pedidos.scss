@@ -3,6 +3,9 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+    .form-group{
+        background-color: #ddc53f;
+    }
     .formulario label {
         display: grid;
         margin-bottom: 5px;
@@ -16,7 +19,7 @@
         box-sizing: border-box;
     }
     .formulario button{
-        background-color: #007bff;
+        background-color: rgb(0, 8, 83);
         color: #fff;
         border: none;
         padding: 10px 20px;

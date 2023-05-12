@@ -88,11 +88,9 @@ header {
 }
 .btnIndex{
   background-color: rgb(204, 204, 204);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
-  justify-content: end;
-  align-items: end;
 }
 
 /* Pagina Carrito */
@@ -143,13 +141,14 @@ header {
 }
 
 /* Pedidos */
-.form-group{
-  background-color: #ddc53f;
-}
+
 .formulario {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
+}
+.form-group{
+  background-color: #ddc53f;
 }
 .formulario label {
   display: grid;
@@ -164,7 +163,7 @@ header {
   box-sizing: border-box;
 }
 .formulario button {
-  background-color: #007bff;
+  background-color:rgb(0, 8, 83);
   color: #fff;
   border: solid;
   padding: 10px 20px;
@@ -172,7 +171,7 @@ header {
   cursor: pointer;
 }
 .formulario button :hover {
-  background-color: #00028a;
+  background-color: #8d8fff;
 }
 
 /* Productos */
@@ -357,9 +356,19 @@ footer .logoInstagram {
     padding: 10px;
   }
   /* productos */
+  
   .productos {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    max-width: 60%;
+    margin: auto;
+  }
+  .productos img {
+        max-width: 50%;
+        height: auto;
+    }
   }
   article {
     margin-bottom: 20px;
@@ -379,7 +388,7 @@ footer .logoInstagram {
   article ul a {
     font-size: 0.4rem;
   }
-}
+
 /* Pedidos*/
 .formulario {
   margin-top: 20px;
