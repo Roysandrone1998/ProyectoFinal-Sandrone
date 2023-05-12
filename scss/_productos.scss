@@ -1,15 +1,21 @@
                                      /* Productos */
 .productos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 20px;
+    max-width: 80%;
+    margin: auto;
     .productos img {
         max-width: 70%;
         height: auto;
     }
+    .pr{
+        justify-content: center;
+        text-align: center;  
+    }
     .productos article {
-        background-color:#ddc53f;
+        background-color:#f5f255;
         padding: 1rem;
         border-radius: 0.5rem;
         
