@@ -131,7 +131,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  justify-items: center;
+  
 }
 
 .cr {
@@ -141,7 +141,9 @@ header {
   top: 0%;
   
 }
-
+.contebedorFinal{
+  grid-column: 3;
+}
 .pagar {
   background-color: rgb(0, 8, 83);
   border: 1px solid rgb(255, 255, 255);
@@ -192,10 +194,13 @@ header {
   max-width: 80%;
   margin: auto;
 }
-.productos img {
-  max-width: 70%;
-  height: auto;
+.imagen-articulo {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  object-position: center; 
 }
+
 .pr {
   justify-content: center;
   text-align: center;
@@ -204,11 +209,9 @@ header {
   background-color: #f5f255;
   padding: 1rem;
   border-radius: 0.5rem;
-}
-.productos article {
   box-shadow:  rgba(0, 0, 0, 0.2);
   padding: 20px;
-
+ 
 }
 
 .productos article ul {
