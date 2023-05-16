@@ -10,28 +10,32 @@
         max-width: 70%;
         height: auto;
     }
+    .imagen-articulo {
+        width: 100%;
+        height: 200px; 
+        object-fit: cover; 
+        object-position: center; 
+        }
     .pr{
         justify-content: center;
         text-align: center;  
     }
     .productos article {
-        background-color:#f5f255;
+        background-color: #f5f255;
         padding: 1rem;
         border-radius: 0.5rem;
-        
-    }                                    
-    article {
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        box-shadow:  rgba(0, 0, 0, 0.2);
         padding: 20px;
-    }
-    article ul{
-        list-style: none;
-        text-align: center;
-    }
-    article img {
-        display: flex;
-        margin: 0 auto;
-    }
+        }
+        .productos article ul {
+            list-style: none;
+            justify-content: center;
+            text-align: center;
+            }                                  
+            .productos article img {
+                display: flex;
+                margin: 0 auto;
+                }
 }
 .btnVermas{
     background-color: rgb(204, 204, 204);
