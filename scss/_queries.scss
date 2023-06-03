@@ -30,7 +30,7 @@
 }
 
                          /* Estilos para dispositivos moviles */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px) {
     .containerNav{
         display: flex;
         flex-direction: column;
@@ -66,32 +66,35 @@
 }
 
                            /* Index */
-.containerIndex {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 10px;
-    padding: 10px;
-        .abc {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .title {
-            font-size: 4rem;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .impresiones  {
-            font-size: 1rem;
-            text-align: center;
-            margin-bottom: 10px
-        }
-        .impresiones div{
-            display: none;
-        }
+.mainIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    justify-content: center;
+    text-align: center;
+    .impresiones {
+        justify-content: center;
+        text-align: center;
     }
-    
+}
+.card {
+    width: 8rem;
+    .card img {
+        width: auto;
+        height: 8rem;
+    }
+    .btnIndex{
+        margin: 1rem;
+        padding: 1%;
+        background-color:#f5f255;
+        color: rgb(0, 0, 0);
+        border: 0.5px solid rgb(0, 0, 0);
+        border-radius: 0.25rem;
+    }
+}
                         /* productos */
 .productos {
     display: grid;

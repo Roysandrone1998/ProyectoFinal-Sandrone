@@ -1,27 +1,41 @@
                                                        /* index */
-.containerIndex {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-grid-gap: 20px;
-padding: 20px;
-    .abc {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .title {
-        font-size: 4rem;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .impresiones {
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 20px
-    }
+.mainIndex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.mainIndex{
-    margin-top: 100px;
-    margin-bottom: 100px;
+.card {
+    width: 18rem;
+}
+.card img {
+    width: auto;
+    height: 16rem;
+}
+.card a{
+    background-color: #ddc53f;
+    color: #000000;
+}
+.abc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title {
+    justify-content: center;
+    text-align: center;
+
+}
+.impresiones {
+    justify-content: center;
+    text-align: center;
+}
+.btnIndex{
+    margin: 6rem;
+    padding: 3%;
+    background-color:#f5f255;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    
 }

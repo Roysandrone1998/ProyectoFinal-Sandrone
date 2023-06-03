@@ -19,7 +19,6 @@ header {
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 40%, rgb(0, 8, 83) 100%);
 }
-
 .container-logo {
   display: grid;
   place-items: center;
@@ -31,7 +30,6 @@ header {
 .logo:hover {
   transform: scale(80%);
 }
-
 .navbar {
   display: flex;
   align-items: center;
@@ -42,7 +40,6 @@ header {
   margin: 0 20px;
   font-size: 1.2rem;
 }
-
 .containerNav {
   display: flex;
   align-items: center;
@@ -64,11 +61,22 @@ header {
 }
 
 /* index */
-.containerIndex {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
-  padding: 20px;
+.mainIndex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 18rem;
+}
+.card img {
+  width: auto;
+  height: 16rem;
+}
+.card a{
+  background-color: #ddc53f;
+  color: #000000;
 }
 .abc {
   display: flex;
@@ -77,20 +85,23 @@ header {
   flex-direction: column;
 }
 .title {
-  font-size: 4rem;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 20px;
+
 }
 .impresiones {
-  font-size: 2rem;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 20px;
+
 }
 .btnIndex{
-  background-color: rgb(204, 204, 204);
-  color: rgb(255, 255, 255);
+  margin: 6rem;
+  padding: 3%;
+  background-color:#f5f255;
+  color: rgb(0, 0, 0);
   border: 1px solid rgb(0, 0, 0);
   border-radius: 0.5rem;
+  
 }
 
 /* Pagina Carrito */
@@ -189,7 +200,7 @@ header {
 .productos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   max-width: 80%;
   margin: auto;
@@ -257,56 +268,39 @@ header {
 
 /*footer*/
 footer {
-  background-color: rgb(0, 8, 83);
-  color: rgb(255, 252, 55);
-  height: 100px;
-  margin-top: 50px;
+  background-color: #fff5c0;
+  border: 1rem double black;
+  margin-bottom: 2rem;
 }
-footer div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+footer div div div {
+  color: black;
+  font-size: 0.6rem;
 }
-footer strong {
-  color: beige;
+
+footer div div div a {
+  text-decoration: underline;
+  color: black;
 }
-footer .logoInstagram {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+
+footer h3 {
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.anim {
+  padding: 7px;
+}
+
+.anim:hover {
+  transform: scale(130%);
+  transition: all 1.5s;
 }
 
 /* queries*/
-/* Estilos para dispositivos grandes */
-@media (min-width: 992px) {
-  .container-logo {
-    width: 20%;
-  }
-  .containerNav {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 25px;
-  }
-  .containerNav li {
-    margin-left: 25px;
-  }
-  .logo {
-    width: 250px;
-    height: 250px;
-  }
-  .logInstagram {
-    width: 100px;
-    height: 100px;
-  }
-  .row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .col-md-6 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-}
+
 /* Estilos para dispositivos moviles */
 @media only screen and (max-width: 768px) {
   .containerNav {
@@ -333,34 +327,38 @@ footer .logoInstagram {
     width: 20px;
     height: 20px;
   }
-  .title {
-    font-size: 24px;
-  }
+
   /* Index */
-  .containerIndex {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 10px;
-    padding: 10px;
-  }
-  .abc {
+  .mainIndex {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .title {
-    font-size: 4rem;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 20px;
+  
   }
   .impresiones {
-    font-size: 1rem;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 10px;
   }
-  .impresiones div {
-    display: none;
+  .card {
+    width: 8rem;
+  }
+  .card img {
+    width: auto;
+    height: 8rem;
+  }
+  .btnIndex{
+    margin: 1rem;
+    padding: 1%;
+    background-color:#f5f255;
+    color: rgb(0, 0, 0);
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius: 0.25rem;
+    
   }
   /* Carrito */
   .containerNav .perfil {
