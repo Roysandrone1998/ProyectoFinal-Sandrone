@@ -1,21 +1,27 @@
                                         /*footer*/
-footer{                                           
-    background-color: rgb(0, 8, 83);
-    color: rgb(255, 252, 55);
-    height: 100px;
-    margin-top: 50px;
-    footer div{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    footer strong{
-        color: beige;
-    }
-    .logoInstagram{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    }
+footer {
+    background-color: #fff5c0;
+    border: 1rem double black;
+    margin-bottom: 2rem;
 }
-                                    
+footer div div div {
+    color: black;
+    font-size: 0.6rem;
+}
+footer div div div a {
+    text-decoration: underline;
+    color: black;
+}
+footer h3 {
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.anim {
+    padding: 7px;
+}
+.anim:hover {
+    transform: scale(130%);
+    transition: all 1.5s;
+}
