@@ -4,11 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: Arial, sans-serif;
 }
-
 /* Header*/
 header {
   display: flex;
@@ -72,7 +70,7 @@ header {
   height: 16rem;
 }
 .card a{
-  background-color: #ddc53f;
+  background-color: #f5f255;
   color: #000000;
 }
 .abc {
@@ -84,7 +82,6 @@ header {
 .title {
   justify-content: center;
   text-align: center;
-
 }
 .impresiones {
   justify-content: center;
@@ -98,6 +95,11 @@ header {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 0.5rem; 
 }
+.datoindex{
+  margin-top: 10%;
+  margin-bottom:10%;
+  border: 1rem double #f5f255;
+}
 /* Pagina Carrito */
 .contenedorCarrito {
   display: flex;
@@ -107,8 +109,14 @@ header {
   text-align: center;
   background-color:  #f5f255;
   border-radius: 5%;
-  max-width: 300px
-
+  max-width: 300px;
+}
+.contenedorBotones {
+  margin: auto;
+  background-color: rgb(0, 8, 83);
+  color: rgb(255, 255, 255);
+  padding: 5px 15px;
+  border-radius: 2%;
 }
 .contenedorCarrito ul{
   list-style: none;
@@ -120,24 +128,16 @@ header {
   object-fit: cover; 
   object-position: center; 
 }
-.contenedorBotones {
-  margin: auto;
-  background-color: rgb(0, 8, 83);
-  color: rgb(255, 255, 255);
-  padding: 5px 15px;
-  border-radius: 2%;
-}
+
 .contenedorPrecios {
   text-align: center;
   color: rgb(0, 0, 0);
 }
-
 .carrito {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
 .cr {
   justify-content: center;
   text-align: center;
@@ -151,11 +151,8 @@ header {
   background-color: rgb(0, 8, 83);
   border: 1px solid rgb(255, 255, 255);
   color: aliceblue;
-
 }
-
 /* Pedidos */
-
 .formulario {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -187,7 +184,6 @@ header {
 .formulario button :hover {
   background-color: #00028a;
 }
-
 /* Productos */
 .productos {
   display: grid;
@@ -203,7 +199,6 @@ header {
   object-fit: cover; 
   object-position: center; 
 }
-
 .pr {
   justify-content: center;
   text-align: center;
@@ -215,7 +210,6 @@ header {
   box-shadow:  rgba(0, 0, 0, 0.2);
   padding: 20px;
 }
-
 .productos article ul {
   list-style: none;
   justify-content: center;
@@ -225,7 +219,6 @@ header {
   display: flex;
   margin: 0 auto;
 }
-
 .btnVermas {
   background-color: rgb(204, 204, 204);
   color: rgb(255, 255, 255);
@@ -237,60 +230,69 @@ header {
   text-decoration: none;
   color: #000000;
 }
-
 /* Pagina quienes somos */
+.quienes{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .perfil {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   text-align: center;
   font-size: 18px;
-  color: #666;
-  margin-top: 10px;
+  color: #000000;
+  margin-top: 20px;
+  border: 1rem double black;
+}
+.perfil:hover{
+  transform: scale(110%);
+  transition: all 1.5s;
+}
+
+.perfil img{
+  width: 20rem;
+  height: 25rem;
 }
 .secQuienes {
-  background-color: #ddc53f;
+  background-color: #b9b9b9;
+  border: 1rem double black;
   padding: 15px;
   margin-top: 50px;
 }
 .comoTrabajamos {
   justify-content: center;
   text-align: center;
+  margin-top: 20px;
 }
-
+.telefo p{
+text-align: center;
+}
 /*footer*/
 footer {
   background-color: #fff5c0;
   border: 1rem double black;
   margin-bottom: 2rem;
 }
-
 footer div div div {
   color: black;
   font-size: 0.6rem;
 }
-
 footer div div div a {
   text-decoration: underline;
   color: black;
 }
-
 footer h3 {
   font-size: 0.7rem;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding-bottom: 2em;
 }
-
 .anim {
   padding: 7px;
 }
-
 .anim:hover {
   transform: scale(130%);
   transition: all 1.5s;
 }
-
 /* queries*/
 
 /* Estilos para dispositivos moviles */
@@ -319,7 +321,6 @@ footer h3 {
     width: 20px;
     height: 20px;
   }
-
   /* Index */
   .mainIndex {
     display: flex;
@@ -330,7 +331,6 @@ footer h3 {
   .title {
     justify-content: center;
     text-align: center;
-  
   }
   .impresiones {
     justify-content: center;
@@ -345,28 +345,24 @@ footer h3 {
     height: 14rem;
   }
   .btnIndex{
-    margin: 1rem;
-    padding: 1%;
+    margin: 6rem;
+    padding: 3%;
     background-color:#f5f255;
     color: rgb(0, 0, 0);
     border: 0.5px solid rgb(0, 0, 0);
-    border-radius: 0.25rem;
-    
+    border-radius: 0.25rem;  
   }
   /* Carrito */
   .contenedorCarrito {
     max-width: 100%; 
   }
-
   .carrito {
     grid-template-columns: 1fr; 
   }
-
   .contebedorFinal {
     grid-column: 3; 
   }
   /* productos */
-  
   .productos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -388,8 +384,6 @@ footer h3 {
   article ul {
     margin-top: 5px;
   }
-
-
 /* Pedidos*/
 .formulario {
   margin-top: 20px;
